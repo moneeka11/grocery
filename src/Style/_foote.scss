@@ -1,0 +1,113 @@
+footer{
+    padding: 20px;
+    .top-footer{
+        margin-bottom: 20px;
+        ul{
+            li{
+                padding-right: 10px;
+                font-size: 14px;
+                letter-spacing: 1px;
+                padding-top: 10px;
+            }
+            
+        }
+        .col-lg-4{
+            padding-left: 135px;
+        }
+    }
+    .widget-footer{
+        .media-image3{
+            width: 100%;
+        }
+        .textwidget{
+            p{
+                font-size: 15px;
+                line-height: 2;
+                letter-spacing: 0.03rem;
+                word-spacing: 0.1rem;
+                padding-bottom: 30px;
+            }
+        }
+        .media-image7{
+            img{
+                width: 100%;
+            }
+
+        }
+        .widget-product{
+
+            .widget-title{
+                font-size: 18px;
+                padding-bottom: 15px;
+              
+            }
+            .p-img{
+                width: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+            .d-list{
+                
+                .list-title{
+                    font-size: 14px;  
+                }
+                .p{
+                    font-size: 13px;
+                    del {
+                        color: #B8B8B8;
+
+                        .p-item1 {
+                            color: #B8B8B8;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .p-item2 {
+                        color: $green;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+        }
+        .p-categories{
+            .widget-title{
+                font-size: 18px;
+                padding-bottom: 15px;
+
+            }
+            ul{
+                padding-left: 0px;
+                li{
+                    font-size: 15px;
+                    padding: 5px 0px;
+                }
+            }
+        }
+        .widget-title{
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+        .text-widget{
+            p{
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+
+        }
+    }
+    .bottom-footer{
+        padding: 15px;
+        .c{
+            margin: 0px;
+             font-size: 15px;
+             a{
+                color: black;
+                &:hover{
+                    color: $green;
+                }
+             }
+        }
+    }
+}

@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1220px !important;
+  padding: 0px 20px;
+  margin: auto;
+}
+
+/*header*/
+.top {
+  background-color: #F4F7F9;
+  padding: 10px 0px;
+}
+.top .top-bar .top-header-left .content {
+  font-size: 13px;
+  padding: 5px;
+  font-weight: 400;
+}
+.top .top-bar .top-header-right .content-social .socialicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+}
+.top .top-bar .top-header-right .content-social .socialicon li {
+  padding: 5px 5px;
+}
+.top .top-bar .top-header-right .content-social .socialicon li i {
+  font-size: 14px;
+  color: black;
+}
+
+.main-header .bg-light {
+  background-color: white !important;
+  padding: 0px;
+}
+.main-header .logo {
+  padding: 27px 0px;
+}
+.main-header .navbar-nav .nav-link.active {
+  color: #7FBA32 !important;
+}
+.main-header .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 12px 20px 12px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+.main-header .main-tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 20px 0px 0px;
+}
+.main-header .main-tel .main-icon .fa-phone {
+  font-size: 23px;
+  padding: 9px 0px 0px 0px;
+}
+.main-header .main-tel .main-content {
+  font-size: 13px;
+  padding-left: 15px;
+}
+.main-header .main-tel .main-content .tel {
+  display: block;
+}
+.main-header .main-tel .main-content .tel a {
+  font-size: 13px;
+  color: black;
+}
+.main-header .main-tel .main-content .email a {
+  font-size: 13px;
+  color: black;
+}
+
+.below-header .below-bar .menulist {
+  background-color: #7FBA32;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 5px;
+  line-height: 35px;
+  margin: 0px 30px 0px 10px;
+}
+.below-header .below-bar .menulist .menuicon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.below-header .below-bar .menulist .menu-title {
+  font-size: 16px;
+  margin-right: 69px;
+}
+.below-header .below-bar .c .list-g {
+  display: table;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 5px;
+}
+.below-header .below-bar .c .list-g .list-item {
+  padding: 10px 30px;
+  display: table-cell;
+  border: 1px solid #F4F7F9;
+  background-color: #F4F7F9;
+}
+.below-header .below-bar .c .list-g .list-item a {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+.below-header .below-bar .searchitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.below-header .below-bar .searchitem #s-item {
+  width: 83%;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid #F4F7F9;
+  font-size: 15px;
+  margin-left: 98px;
+}
+.below-header .below-bar .searchitem .search {
+  background-color: #7FBA32;
+  border: none;
+  padding: 5px 14px;
+  border-radius: 5px;
+  margin: 4px 0px 5px -58px;
+}
+.below-header .below-bar .searchitem .search i {
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+}
+.below-header .below-bar .cart-icon {
+  margin: 5px 0px 0px 99px;
+}
+.below-header .below-bar .cart-icon .wishlist {
+  font-size: 20px;
+  background-color: #F4F7F9;
+  margin: 5px;
+  padding: 12px;
+  border-radius: 10px;
+}
+.below-header .below-bar .cart-icon .wishlist i {
+  color: black;
+}
+.below-header .below-bar .cart-icon .user {
+  font-size: 20px;
+  background-color: #F4F7F9;
+  margin: 5px;
+  padding: 12px;
+  border-radius: 10px;
+}
+.below-header .below-bar .cart-icon .user i {
+  color: black;
+}
+.below-header .below-bar .cart-icon .cart {
+  font-size: 20px;
+  background-color: #F4F7F9;
+  margin: 5px;
+  padding: 12px;
+  border-radius: 10px;
+}
+.below-header .below-bar .cart-icon .cart i {
+  color: black;
+}
+
+.banner {
+  background-color: #F4F7F9;
+  margin-top: 8px;
+}
+.banner .sidebar {
+  margin-top: 10px;
+}
+.banner .sidebar .sidelist {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: -20px;
+}
+.banner .sidebar .sidelist h6 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+}
+.banner .sidebar .sidelist .box1 .img-box img {
+  width: 60px;
+}
+.banner .sidebar .sidelist .ptitle {
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+.banner .sidebar .sidelist .product-price .p-item1 {
+  font-size: 12px;
+  margin-right: 5px;
+}
+.banner .sidebar .sidelist .product-price .p-item2 {
+  font-size: 12px;
+  color: #7FBA32;
+}/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,9 @@
+$gray:#F4F7F9;
+$green:#7FBA32;
+@mixin flex($jc:space-between,$ai:center,$wrap:nowrap) {
+    display: flex;
+    justify-content: $jc ;
+    align-items: $ai ;
+    flex-wrap: $wrap ;  
+      
+}
