@@ -11,7 +11,7 @@ export default function Productdetail() {
       <div className="container">
         <div className="product-items">
           <div className="row">
-            <h3>details {id}</h3>
+           
             <div className="col-lg-6">
               <img src={allproduct.image} alt="" />
             </div>

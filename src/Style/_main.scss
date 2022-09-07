@@ -38,12 +38,25 @@ ul {
             .socialicon{
                 li{
                     padding: 5px 6px;
+                    transition: 1s;
                     i{
                         font-size: 14px;
                         color: black;
+                        &:hover{
+                            color: #7FBA32 !important;
+                        }
+                        
                     }
+                    &:hover{
+                       
+                        transform: rotate(360deg);
+                        
+                    }
+                  
                 }
+              
             }
+
         }
 
     }
@@ -116,22 +129,29 @@ ul {
         }
         .c{
             .list-g{
-                display: table;
-                border-radius:0px ;
+               position: relative;
+                // display: table;
+              
                 padding: 0px;
-                margin: 8px 0px 0px 0px;
+                margin: 17px 0px 8px 0px;
+                
                 
                 .list-item{
-                    padding: 10px 30px;
-                    display: table-cell;
+                    display: inline;
+                    padding: 10px 80px 10px 25px;
+                    // display: table-cell;
                     border: 1px solid $gray;
-                    background-color: $gray;
+                    background-color:$gray;
+            
                 
                     a{
                        
                         color: black;
                         font-size: 15px;
-                        font-weight: 500;   
+                        font-weight: 500;  
+                        &:hover{
+                            color: #7FBA32;
+                        } 
                     }
                 }
             }

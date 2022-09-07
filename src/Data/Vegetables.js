@@ -1,4 +1,4 @@
-const Vegetable=[
+const Vegetables=[
     {
         "id":1,
         title:"Organic Cheeries",
@@ -86,4 +86,4 @@ const Vegetable=[
     
     }
 ]
-export default Vegetable;
+export default Vegetables;

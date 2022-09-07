@@ -1,4 +1,4 @@
-.shop-banner{
+.veg-banner{
     background-color: $gray;
     margin-top: 8px;
     padding-bottom: 10px ;
@@ -69,19 +69,22 @@
             .shop-head{
                 margin-bottom: 10px;
                 h6{
-                    font-size: 25px;
+                    font-size: 21px;
                     font-weight: 600;
                 }
-                .col-lg-3{
-                    padding-left: 73px;
+                .col-lg-5{
+                    padding-left: 100px;
                 nav{
                     
                     ol{
                         li{
-                            font-size: 14px;
+                            font-size: 13px;
                             letter-spacing: 1px;
+                            color: #fff;
                             a{
-                                color: black;
+                                color: black !important;
+        
+
 
 
                             }

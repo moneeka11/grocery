@@ -1,14 +1,13 @@
-
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Products from '../Data/Products'
 import Toprate from '../Data/Toprate'
-import Vegetables from '../Data/Vegetables'
+import Dairyproduct from '../Data/Dairyproduct'
 
-export default function Vegetable() {
+export default function DairyProducts() {
   return (
-    <>
-    <div className="veg-banner">
+   <>
+     <div className="veg-banner">
         <div className="container">
           <div className="row">
             <div className="col-lg-2">
@@ -80,14 +79,14 @@ export default function Vegetable() {
                 <div className="shop-head">
                   <div className="row">
                     <div className="col-lg-7">
-                      <h6>Category: Vegetables & Fruits</h6>
+                      <h6>Category:Beverages</h6>
                     </div>
                     <div className="col-lg-5 ">
                       <nav aria-label="breadcrumb">
                         <ol className="breadcrumb">
                           <li className="breadcrumb-item"><NavLink to="/home" activeClassName="active">Home</NavLink></li>
                           <li className="breadcrumb-item"><NavLink to="/products" activeClassName="active">Products</NavLink></li>
-                          <li className="breadcrumb-item"><NavLink to="/vegetables" activeClassName="active">Vegetables & Fruits </NavLink></li>
+                          <li className="breadcrumb-item"><NavLink to="/beverage" activeClassName="active">Beverages </NavLink></li>
 
                         </ol>
                       </nav>
@@ -97,7 +96,7 @@ export default function Vegetable() {
                 <div className="shop-main">
                   <div className="row">
                     {
-                      Vegetables.map((a) => (
+                      Dairyproduct.map((a) => (
                         <>
 
                           <div className="col-lg-3">
@@ -142,6 +141,6 @@ export default function Vegetable() {
           </div>
         </div>
       </div>
-    </>
+   </>
   )
 }

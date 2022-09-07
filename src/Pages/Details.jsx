@@ -13,7 +13,7 @@ export default function Details() {
       <div className="container">
         <div className="product-items">
           <div className="row">
-            <h3>details {id}</h3>
+            
             <div className="col-lg-6">
               <img src={Pdisplay.image} alt="" />
             </div>

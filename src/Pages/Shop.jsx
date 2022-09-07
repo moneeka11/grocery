@@ -84,8 +84,8 @@ export default function Shop() {
                     <div className="col-lg-3 ">
                       <nav aria-label="breadcrumb">
                         <ol className="breadcrumb">
-                          <li className="breadcrumb-item"><a href="#">Home</a></li>
-                          <li className="breadcrumb-item"><a href="#">Products</a></li>
+                        <li className="breadcrumb-item"><Link to="/home">Home</Link></li>
+                          <li className="breadcrumb-item"><Link to="/products" >Products</Link></li>
 
                         </ol>
                       </nav>
@@ -93,42 +93,47 @@ export default function Shop() {
                   </div>
                 </div>
                 <div className="shop-main">
-                  <div className="shop-content">
-                    <div className="row ">
+                  <div className="row">
+                    {
+                      Allproduct.map((a) => (
+                        <>
 
-                      {
-                        Allproduct.map((a) => (
-                          <>
-                            <div className="col-lg-3 p-0">
-                              <div className="h">
+                          <div className="col-lg-3">
+                            <div className="flip-container">
+                              <div className="card">
+                                <div className="back">
+                                  <img src={a.image} alt="" className=" w-100" height="210px" />
 
-                                <div className="shop-img ">
-                                  <img src={a.image} alt="" />
+                                  <div className="card-body p-0">
+                                    <h6 className="title text-center">{a.title}</h6>
+                                    <div className="product-price text-center">
+                                      <del><span className='p-item1'>{a.oldprice}</span></del>
+                                      <span className='p-item2'>{a.newprice}</span>
 
+                                    </div>
+
+                                  </div>
                                 </div>
-                                <div className="title text-center">
-                                  <span className="product-title "><p>{a.title}</p></span>
-                                </div>
-                                <div className="product-price text-center">
-                                  <del><span className='p-item1'>{a.oldprice}</span></del>
-                                  <span className='p-item2'>{a.newprice}</span>
+                                <div className="front">
+                                  <div className="card-body">
+                                    <div className="d text-center mt-5 mb-4">
+                                      <Link to={`Productdetail/${a.id}`}><span className="quick">Quick View</span></Link></div>
+                                    <a href="" className=' d-block text-center mb-4 '><span className="icon-cart mt-5"><i class="bi bi-cart-plus"></i> Add to cart</span></a>
+                                    <a href='' className=' d-block text-center'><span class="icon"> <i className="fa-solid fa-heart"></i> Wishlist</span></a>
 
-                                </div>
-                                
-                                <div className="thunk-product-hover">
-                                  <div className="d"><Link to={`Productdetail/${a.id}`}><span>Quick View</span></Link></div>
-                                  <a href="" className='border-end '><i class="bi bi-cart-plus"></i> Add to cart</a>
-                                  <a href='' className='border-end '> <i className="fa-solid fa-heart"></i> wishlist</a>
-
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </>
-                        ))
-                      }
+                          </div>
 
-                    </div>
+
+                        </>
+
+                      ))
+                    }
                   </div>
+
                 </div>
               </div>
             </div>

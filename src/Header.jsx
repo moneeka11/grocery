@@ -4,12 +4,19 @@ import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Shop from './Pages/Shop';
 import Vegetable from './Pages/Vegetable';
-import Data from './Data/Listdata';
 import Details from './Pages/Details';
 import Detail from './Pages/Detail';
 import Productdetail from './Pages/Productdetail';
 import Search from './Search';
 import Allproduct from './Data/Allproduct'
+import VegetableDetail from './Pages/VegetableDetail';
+import Pet from './Pages/Pet';
+import Beverages from './Pages/Beverages';
+import DairyProducts from './Pages/DairyProducts';
+import FoodGrains from './Pages/FoodGrains';
+import PersonalCares from './Pages/PersonalCares';
+import BeverageDetail from './Pages/BeverageDetail';
+import DairyProductDetail from './Pages/DairyProductDetail';
 
 
 
@@ -154,11 +161,11 @@ export default function Header() {
                                     </div>                  <div className="c">{
                                         show ? <ul class="list-g">
                                             <li class="list-item"><Link to="/vegetable">Vegetables&Fruits</Link></li>
-                                            <li class="list-item">Beverages</li>
-                                            <li class="list-item">DairyProducts</li>
-                                            <li class="list-item">FoodGrains&Oil</li>
-                                            <li class="list-item">PersonalCare</li>
-                                            <li class="list-item">PetCare</li>
+                                            <li class="list-item"><Link to="/beverage">Beverages</Link></li>
+                                            <li class="list-item"><Link to="/dairyproduct">DairyProducts</Link></li>
+                                            <li class="list-item"><Link to="/foodgrain">FoodGrains&Oil</Link></li>
+                                            <li class="list-item"><Link to="/personalcare">PersonalCare</Link></li>
+                                            <li class="list-item"><Link to="/petcare">PetCare</Link></li>
                                             {/* {
                                                 Data.map((i) => (
 
@@ -201,6 +208,11 @@ export default function Header() {
                 <Route path="/" element={<Home />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/vegetable" element={<Vegetable />} />
+                <Route path="/beverage" element={<Beverages/>} />
+                <Route path="/dairyproduct" element={<DairyProducts/>} />
+                <Route path="/foodgrain" element={<FoodGrains/>} />
+                <Route path="/personalcare" element={<PersonalCares/>} />
+                <Route path="/petcare" element={<Pet />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/details/:id" element={<Details />} />
                 <Route path="/detail/:id" element={<Detail />} />
@@ -208,6 +220,22 @@ export default function Header() {
                 <Route path="/shop/details/:id" element={<Details />} />
                 <Route path="/shop/detail/:id" element={<Detail />} />
                 <Route path='/shop/Productdetail/:id' element={<Productdetail />} />
+                <Route path='/vegetable/details/:id' element={<Details />} />
+                <Route path='/vegetable/detail/:id' element={<Detail />} />
+                <Route path='/vegetable/VegetableDetail/:id' element={<VegetableDetail />} />
+                <Route path='/beverage/details/:id' element={<Details />} />
+                <Route path='/beverage/detail/:id' element={<Detail />} />
+                <Route path='/beverage/VegetableDetail/:id' element={<BeverageDetail />} />
+                <Route path='/dairyproduct/details/:id' element={<Details />} />
+                <Route path='/dairyproduct/detail/:id' element={<Detail />} />
+                <Route path='/dairyproduct/DairyProductDetail/:id' element={<DairyProductDetail/>} />
+               
+                <Route path="/home" element={<Home />} />
+                <Route path="/products" element={<Shop />} />
+                <Route path="/vegetables" element={<Vegetable />} />
+
+               
+
             </Routes>
 
         </>
