@@ -17,6 +17,9 @@ import FoodGrains from './Pages/FoodGrains';
 import PersonalCares from './Pages/PersonalCares';
 import BeverageDetail from './Pages/BeverageDetail';
 import DairyProductDetail from './Pages/DairyProductDetail';
+import FoodGrainDetail from './Pages/FoodGrainDetail';
+import PersonalCareDetail from './Pages/PersonalCareDetail';
+import PetCareDetail from './Pages/PetCareDetail';
 
 
 
@@ -229,6 +232,15 @@ export default function Header() {
                 <Route path='/dairyproduct/details/:id' element={<Details />} />
                 <Route path='/dairyproduct/detail/:id' element={<Detail />} />
                 <Route path='/dairyproduct/DairyProductDetail/:id' element={<DairyProductDetail/>} />
+                <Route path='/foodgrain/details/:id' element={<Details />} />
+                <Route path='/foodgrain/detail/:id' element={<Detail />} />
+                <Route path='/foodgrain/FoodGrainDetail/:id' element={<FoodGrainDetail/>} />
+                <Route path='/personalcare/details/:id' element={<Details />} />
+                <Route path='/personalcare/detail/:id' element={<Detail />} />
+                <Route path='/personalcare/PersonalCareDetail/:id' element={<PersonalCareDetail/>} />
+                <Route path='/petcare/details/:id' element={<Details />} />
+                <Route path='/petcare/detail/:id' element={<Detail />} />
+                <Route path='/petcare/PetCareDetail/:id' element={<PetCareDetail/>} />
                
                 <Route path="/home" element={<Home />} />
                 <Route path="/products" element={<Shop />} />

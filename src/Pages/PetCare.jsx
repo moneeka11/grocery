@@ -2,11 +2,11 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Products from '../Data/Products'
 import Toprate from '../Data/Toprate'
-import Dairyproduct from '../Data/Dairyproduct'
+import Petcare from '../Data/Petcare'
 
-export default function DairyProducts() {
+export default function PetCare() {
   return (
-   <>
+    <>
      <div className="veg-banner">
         <div className="container">
           <div className="row">
@@ -79,14 +79,14 @@ export default function DairyProducts() {
                 <div className="shop-head">
                   <div className="row">
                     <div className="col-lg-7">
-                      <h6>Category:Dairy Products</h6>
+                      <h6>Category: Pet Care</h6>
                     </div>
                     <div className="col-lg-5 ">
                       <nav aria-label="breadcrumb">
                         <ol className="breadcrumb">
                           <li className="breadcrumb-item"><NavLink to="/home" activeClassName="active">Home</NavLink></li>
                           <li className="breadcrumb-item"><NavLink to="/products" activeClassName="active">Products</NavLink></li>
-                          <li className="breadcrumb-item"><NavLink to="/dairyproduct" activeClassName="active">Dairy Products</NavLink></li>
+                          <li className="breadcrumb-item"><NavLink to="/petcare" activeClassName="active">Pet Care</NavLink></li>
 
                         </ol>
                       </nav>
@@ -96,7 +96,7 @@ export default function DairyProducts() {
                 <div className="shop-main">
                   <div className="row">
                     {
-                      Dairyproduct.map((a) => (
+                     Petcare.map((a) => (
                         <>
 
                           <div className="col-lg-3">
@@ -118,7 +118,7 @@ export default function DairyProducts() {
                                 <div className="front">
                                   <div className="card-body">
                                     <div className="d text-center mt-5 mb-4">
-                                      <Link to={`DairyProductDetail/${a.id}`}><span className="quick">Quick View</span></Link></div>
+                                      <Link to={`PetCareDetail/${a.id}`}><span className="quick">Quick View</span></Link></div>
                                     <a href="" className=' d-block text-center mb-4 '><span className="icon-cart mt-5"><i class="bi bi-cart-plus"></i> Add to cart</span></a>
                                     <a href='' className=' d-block text-center'><span class="icon"> <i className="fa-solid fa-heart"></i> Wishlist</span></a>
 
@@ -141,6 +141,6 @@ export default function DairyProducts() {
           </div>
         </div>
       </div>
-   </>
+    </>
   )
 }
