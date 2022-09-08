@@ -13,7 +13,7 @@ export default function Detail() {
           <div className="row">
             
             <div className="col-lg-6">
-              <img src={Pdisplay.image} alt="" />
+              <img src={Pdisplay.image} alt="food" />
             </div>
             <div className="col-lg-6">
               <div className="p-title">
@@ -23,8 +23,12 @@ export default function Detail() {
                 <span className="p-old"><del>{Pdisplay.oldprice}</del></span>
                 <span className="p-new">{Pdisplay.newprice}</span>
               </div>
+              
               <div className="p-description">
                 <p>{Pdisplay.description}</p>
+              </div>
+              <div className="add-btn">
+                <button className='btn'>Add to cart</button>
               </div>
             </div>
           </div>

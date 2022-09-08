@@ -26,6 +26,9 @@ export default function Productdetail() {
               <div className="p-description">
                 <p>{allproduct.description}</p>
               </div>
+              <div className="add-btn">
+                <button className='btn'>Add to cart</button>
+              </div>
             </div>
           </div>
         </div>

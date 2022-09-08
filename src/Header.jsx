@@ -4,6 +4,7 @@ import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Shop from './Pages/Shop';
 import Vegetable from './Pages/Vegetable';
+import Cart from './Pages/Cart';
 import Details from './Pages/Details';
 import Detail from './Pages/Detail';
 import Productdetail from './Pages/Productdetail';
@@ -20,6 +21,7 @@ import DairyProductDetail from './Pages/DairyProductDetail';
 import FoodGrainDetail from './Pages/FoodGrainDetail';
 import PersonalCareDetail from './Pages/PersonalCareDetail';
 import PetCareDetail from './Pages/PetCareDetail';
+import Account from './Pages/Account';
 
 
 
@@ -102,7 +104,7 @@ export default function Header() {
             <div className='main-header'>
                 <nav className="navbar navbar-expand-lg bg-light p-0">
                     <div className="container">
-                        <img className='logo' src='https://wpthemes.themehunk.com/grocery-lite/wp-content/uploads/sites/128/2020/07/logo.png' />
+                        <Link to="/"><img className='logo' src='https://wpthemes.themehunk.com/grocery-lite/wp-content/uploads/sites/128/2020/07/logo.png' /></Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -191,10 +193,10 @@ export default function Header() {
                             </div>
                             <div className="col-lg-3">
                                 <div className="cart-icon">
-                                    <span className='wishlist'><a href=""><i class="fa-regular fa-heart"></i></a></span>
-                                    <span className="user"><a href=""><i class="fa-regular fa-user"></i></a></span>
-                                    <span className="cart"><a href="">
-                                        <i className="bi bi-bag"></i></a></span>
+                                    <span className='wishlist'><a href=""><i className="fa-regular fa-heart"></i></a></span>
+                                    <span className="user"><Link to="/account"><i class="fa-regular fa-user"></i></Link></span>
+                                    <span className="cart"><Link to="/cart">
+                                        <i className="bi bi-bag"></i></Link></span>
 
 
                                 </div>
@@ -211,6 +213,8 @@ export default function Header() {
                 <Route path="/" element={<Home />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/vegetable" element={<Vegetable />} />
+                <Route path="/cart" element={<Cart/>} />
+                <Route path="/account" element={<Account/>} />
                 <Route path="/beverage" element={<Beverages/>} />
                 <Route path="/dairyproduct" element={<DairyProducts/>} />
                 <Route path="/foodgrain" element={<FoodGrains/>} />

@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Allproduct from '../Data/Allproduct'
 import Products from '../Data/Products'
 import Toprate from '../Data/Toprate'
+import Pagination from './Pagination'
 
 export default function Shop() {
+  const [showPerPage,setShoWPerPage]=useState(8);
+  const [pagination,setPagination]=useState({
+    start:0,
+    end:showPerPage,
+  });
+  const onPaginationChange=(start,end)=>{
+   setPagination({start:start,end:end});
+  }
   return (
     <>
       <div className="shop-banner">
@@ -95,7 +104,7 @@ export default function Shop() {
                 <div className="shop-main">
                   <div className="row">
                     {
-                      Allproduct.map((a) => (
+                      Allproduct.slice(pagination.start,pagination.end).map((a) => (
                         <>
 
                           <div className="col-lg-3">
@@ -133,6 +142,7 @@ export default function Shop() {
                       ))
                     }
                   </div>
+                  <Pagination showPerPage={showPerPage} onPaginationChange={onPaginationChange} total={Allproduct.length}/>
 
                 </div>
               </div>

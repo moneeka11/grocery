@@ -26,6 +26,9 @@ export default function BeverageDetail() {
               <div className="p-description">
                 <p>{Bev.description}</p>
               </div>
+              <div className="add-btn">
+                <button className='btn'>Add to cart</button>
+              </div>
             </div>
           </div>
         </div>

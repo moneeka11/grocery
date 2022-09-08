@@ -28,6 +28,9 @@ export default function Details() {
               <div className="p-description">
                 <p>{Pdisplay.description}</p>
               </div>
+              <div className="add-btn">
+                <button className='btn'>Add to cart</button>
+              </div>
             </div>
           </div>
         </div>

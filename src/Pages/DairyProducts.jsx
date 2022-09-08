@@ -79,7 +79,7 @@ export default function DairyProducts() {
                 <div className="shop-head">
                   <div className="row">
                     <div className="col-lg-7">
-                      <h6>Category:Dairy Products</h6>
+                      <h6>Category: Dairy Products</h6>
                     </div>
                     <div className="col-lg-5 ">
                       <nav aria-label="breadcrumb">

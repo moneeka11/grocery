@@ -224,8 +224,12 @@ ul {
                 margin: 5px;
                 padding: 12px;
                 border-radius:10px;
+                &:hover{
+                    background-color: #7FBA32;
+                }
                 i{
                     color: black;
+                  
                 }
             }
             .user{
@@ -234,10 +238,13 @@ ul {
                 margin: 5px;
                 padding: 12px;
                 border-radius: 10px;
+                &:hover{
+                    background-color: #7FBA32;
+                }
                
                 i{
                     color: black;
-                   
+                  
                 }
 
             }
@@ -247,9 +254,13 @@ ul {
                 margin: 5px;
                 padding: 12px;
                 border-radius: 10px;
+                &:hover{
+                    background-color:#7FBA32;
+                }
                
                 i{
                     color: black;
+                   
                    
                 }
             }
@@ -257,4 +268,18 @@ ul {
         }
 
     }
+}
+.pagination{
+    .page-item{
+        
+        
+        a{
+            color: black;
+            &:hover{
+                color: #7FBA32;
+            }
+           
+        }
+    }
+   
 }

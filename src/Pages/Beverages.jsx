@@ -78,7 +78,7 @@ export default function Beverages() {
                 <div className="shop-head">
                   <div className="row">
                     <div className="col-lg-7">
-                      <h6>Category:Beverages</h6>
+                      <h6>Category: Beverages</h6>
                     </div>
                     <div className="col-lg-5 ">
                       <nav aria-label="breadcrumb">

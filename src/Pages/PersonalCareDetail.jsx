@@ -26,6 +26,9 @@ export default function PersonalCareDetail() {
               <div className="p-description">
                 <p>{personal.description}</p>
               </div>
+              <div className="add-btn">
+                <button className='btn'>Add to cart</button>
+              </div>
             </div>
           </div>
         </div>
