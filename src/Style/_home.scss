@@ -209,7 +209,15 @@
             }
             .row{
                 .col-lg-3{
-                    width: 50%;
+                    @include responsive1{
+                        width: 50%;
+                    }
+                    @include responsive2{
+                        width: 50%;
+                    }
+                    @include responsive3{
+                        width: 50%;
+                    }
                     .b-content {
                         padding: 20px;
                         @include responsive1{
