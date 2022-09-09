@@ -3,9 +3,19 @@
     margin-top: 15px;
     z-index: -1;
     
-
+.col-lg-2{
+    @include responsive1{
+        order:2;
+    }
+    @include responsive2{
+        order:2;
+    }
+    @include responsive3{
+        order:2;
+    }
     .sidebar {
         margin-top: 10px;
+       
 
         .sidelist {
             padding: 10px;
@@ -17,13 +27,33 @@
                 font-weight: bold;
                 font-size: 20px;
                 margin: 0px;
+                @include responsive1{
+                    text-align: center;
+                }
             }
 
             .box1 {
+              
                 .img-box {
-
+                  
                     img {
                         width: 60px;
+                        @include responsive1{
+                           text-align: center;
+                           margin-left: 89px;
+                           width: 168px;
+                        }
+                        @include responsive2{
+                            margin: auto;
+                            
+                            width: 168px;
+                         }
+                         @include responsive3{
+                           margin: auto;
+                          
+                            width: 168px;
+                         }
+    
                     }
                 }
             }
@@ -33,6 +63,11 @@
                 font-size: 13px;
                 font-weight: bold;
                 padding-top: 8px;
+                @include responsive1{
+                    text-align: center;
+                    font-size: 18px;
+                }
+              
 
 
                 a {
@@ -41,6 +76,10 @@
             }
 
             .product-price {
+                @include responsive1{
+                    text-align: center;
+                }
+             
                 del {
                     color: #B8B8B8;
 
@@ -49,6 +88,11 @@
                         margin-right: 5px;
                         font-weight: 400;
                         color: #B8B8B8;
+                        @include responsive1{
+                            font-size: 17px;
+                            letter-spacing: 1px;
+                        }
+                     
                     }
 
                 }
@@ -58,6 +102,9 @@
                     font-size: 12px;
                     color: $green;
                     font-weight: 400;
+                    @include responsive1{
+                        font-size: 17px;
+                    }
                 }
             }
 
@@ -118,11 +165,29 @@
         }
     }
 
+}
+   
+
     .col-lg-10 {
         padding: 10px 0px 0px 30px;
+        @include responsive1{
+            order:1;
+            padding: 10px 0px;
+        }
+        @include responsive2{
+            order:1;
+            padding: 10px 0px;
+        }
+        @include responsive3{
+            order:1;
+            padding: 10px 0px;
+        }
 
         .banner-slide {
             margin-left: 40px;
+            @include responsive1{
+                margin-left: 10px;
+            }
 
             .swiper-pagination-bullet {
                 padding: 6px;
@@ -135,57 +200,90 @@
             margin-top: 20px;
             padding: 20px;
             background-color: white;
-
-            .b-content {
-                padding: 20px;
-
-                .content-icon {
-                    .fa-plane {
-                        transform: rotate(305deg);
-                        font-size: 30px;
-                        padding: 5px 7px;
-                        color: $green;
-                    }
-
-                    .fa-mug-saucer {
-                        font-size: 32px;
-                        padding: 9px 0px;
-                        color: $green;
-
-                    }
-
-                    .bi-gem {
-                        font-size: 35px;
-                        padding: 7px 6px;
-                        color: $green;
-                    }
-
-                    .fa-anchor {
-                        font-size: 32px;
-                        padding: 7px 4px;
-                        color: #7FBA32;
-                    }
-                }
-
-                .content {
-                    padding: 3px 6px;
-
-                    h6 {
-                        font-size: 16px;
-                        margin-bottom: 3px;
-                    }
-
-                    p {
-                        font-size: 14px;
-                        margin: 0px;
-                    }
-                }
+            @include responsive1{
+                margin-left: 10px;
+                padding: 5px;
+                
+                
+              
             }
+            .row{
+                .col-lg-3{
+                    width: 50%;
+                    .b-content {
+                        padding: 20px;
+                        @include responsive1{
+                           border-right: none !important;
+                            margin-right: 0px !important;
+                            flex-wrap: wrap;
+                            
+                          
+                            
+                        }
+        
+                        .content-icon {
+                            .fa-plane {
+                                transform: rotate(305deg);
+                                font-size: 30px;
+                                padding: 5px 7px;
+                                color: $green;
+                                @include responsive1{
+                                    padding: 10px;
+                                }
+                            }
+        
+                            .fa-mug-saucer {
+                                font-size: 32px;
+                                padding: 9px 0px;
+                                color: $green;
+        
+                            }
+        
+                            .bi-gem {
+                                font-size: 35px;
+                                padding: 7px 6px;
+                                color: $green;
+                            }
+        
+                            .fa-anchor {
+                                font-size: 32px;
+                                padding: 7px 4px;
+                                color: #7FBA32;
+                            }
+                        }
+        
+                        .content {
+                            padding: 3px 6px;
+                            @include responsive1{
+                                margin-right: 0px;
+                            }
+        
+                            h6 {
+                                font-size: 16px;
+                                margin-bottom: 3px;
+                            }
+        
+                            p {
+                                font-size: 14px;
+                                margin: 0px;
+                            }
+                        }
+                    }
+
+                }
+               
+
+            }
+
+           
         }
 
         .allproduct {
             position: relative;
             margin-left: 40px;
+            @include responsive1{
+                margin-left: 10px;
+            }
 
             h4 {
                 font-size: 18px;
@@ -200,6 +298,9 @@
                     content: '';
                     top: 2%;
                     margin-left: 15px;
+                    @include responsive1{
+                        width: 50px;
+                    }
                 }
             }
 
@@ -234,16 +335,34 @@
                  }
 
                 .product-col {
+                  @include responsive1{
+                    width: 200px;
+                  }
                     .h {
                         padding: 20px;
                         margin-bottom: 20px;
                         border: 1px solid white;
+                        @include responsive1{
+                          
+                            margin-right: 20px !important;
+                            padding: 0px;
+                        }
+                       
 
                         .text-bg-dark {
                             position: relative;
                             top: -235px;
                             left: 115px;
                             border-radius: 0px 5px 0px 0px;
+                            @include responsive1{
+                                display: none;
+                            }
+                            @include responsive2{
+                                display: none;
+                            }
+                            @include responsive3{
+                                display: none;
+                            }
 
                         }
 
@@ -254,8 +373,12 @@
                         }
 
                         &:hover {
+                           
                             background-color: white;
                             box-shadow: 1px 1px 6px rgb(224, 216, 216);
+                            @include responsive1{
+                                box-shadow: none;
+                            }
 
                             .thunk-product-hover {
                                 display: block;
@@ -270,14 +393,37 @@
                                     font-weight: 600;
                                     font-size: 14px;
                                     left: 27px;
+                                    @include responsive1{
+                                        font-size: 10px;
+                                        left: 16px;
+                                        top: -103px;
+                                    }
+                                    @include responsive2{
+                                        font-size: 10px;
+                                        left: 16px;
+                                        top: -103px;
+                                    }
+                                    @include responsive3{
+                                        font-size: 10px;
+                                        left: 13px;
+                                        top: -120px;
+                                    }
+                                    
+                                    
                                   span{
                                     color: #fff;
                                     background-color: $green;
                                     border-radius: 10px;
                                     padding: 5px 5px;
+                                    @include responsive1{
+                                        border-radius: 0px;
+                                    }
                                     &:hover {
                                         color: #000;
 
+                                    }
+                                    @include responsive1{
+                                        padding: 0px;
                                     }
                                   }
 
@@ -285,6 +431,16 @@
                                 }
 
                                 .border-end {
+                                    @include responsive1{
+                                        display: none;
+                                    }
+                                    @include responsive2{
+                                        display: none;
+                                    }
+                                    
+                                    @include responsive3{
+                                        font-size: 12px;
+                                    }
 
                                     font-size: 14px;
                                     font-weight: 500;
@@ -343,8 +499,18 @@
                    
 
                     .allproduct-image {
+                        @include responsive2{
+                            width: 80px;
+                        }
                         img {
                             width: 100%;
+                            @include responsive1{
+                               width: 50%;
+                            }
+                            @include responsive2{
+                                width: 100%;
+                             }
+                            
                         }
 
                     }
@@ -352,6 +518,21 @@
                     .allproduct-title {
                         h2 {
                             font-size: 15px;
+                            @include responsive1{
+                                font-size: 12px;
+                                padding-left: 2px;
+                                width: 70px;
+                            }
+                            @include responsive2{
+                                font-size: 12px;
+                                padding-left: 2px;
+                                width: 70px;
+                            }
+                            @include responsive3{
+                                font-size: 12px;
+                                padding-left: 2px;
+                                width: 70px;
+                            }
 
                         }
                     }
@@ -359,6 +540,17 @@
                     .allproduct-price {
                         font-size: 14px;
                         margin-bottom: 10px;
+                        @include responsive1{
+                            font-size: 10px;
+                            padding-left: 0px;
+                            
+                            width: 50%;
+                        }
+                        @include responsive2{
+                           display: nonegit;
+                            
+                            
+                        }
 
                         del {
                             color: #B8B8B8;
@@ -366,12 +558,18 @@
                             .p-item1 {
                                 color: #B8B8B8;
                                 margin-right: 5px;
+                                @include responsive1{
+                                    margin-right: -10px;
+                                }
                             }
                         }
 
                         .p-item2 {
                             color: $green;
                             margin-left: 10px;
+                            @include responsive1{
+                                margin-left: 12px;
+                            }
                         }
                     }
 
@@ -380,6 +578,9 @@
         }
         .thunk-ribbon-section{
             margin-left: 40px;
+            @include responsive1{
+                margin-left: 10px;
+            }
             .thunk-ribbon-content{
                 background-color: $green;
                 padding: 10px;
@@ -397,6 +598,12 @@
                     padding: 10px 14px;
                     border-radius: 5px;
                     margin:6px 10px 0px 60px;
+                    @include responsive1{
+                        margin: 6px 10px 0px 10px;
+                    }
+                    @include responsive2{
+                        margin: 6px 10px 0px 10px;
+                    }
                   
                 }
             }
@@ -404,6 +611,9 @@
         .thunk-product-list-section{
             position: relative;
             margin-left: 40px;
+            @include responsive1{
+                margin-left: 10px;
+            }
             h4{
                 font-size: 18px;
                 line-height: 29px;
@@ -423,6 +633,14 @@
             .content-wrap{
                 background-color: #fff;
                 padding: 30px 30px 0px 30px;
+                .d-flex{
+                    @include responsive1{
+                      flex-direction: column;
+                    }
+                    @include responsive2{
+                        flex-direction: column;
+                      }
+                }
                 img{
                     width: 90px;
                 }
@@ -434,7 +652,18 @@
                         margin-top: 30px;
                         letter-spacing: 1px;
                         
-                      
+                      @include responsive1{
+                        font-size: 10px;
+                        padding: 10px;
+                        text-align: center;
+                        margin-top: 10px;
+                      }
+                      @include responsive2{
+                        font-size: 10px;
+                        padding: 10px;
+                        text-align: center;
+                        margin-top: 10px;
+                      }
 
                     }
                    
@@ -442,6 +671,14 @@
                 .p{
                     font-size: 13px;
                     margin-bottom: 10px;
+                    @include responsive1{
+                        font-size: 10px;
+                        text-align: center;
+                    }
+                    @include responsive2{
+                        font-size: 10px;
+                        text-align: center;
+                    }
 
                     del {
                         color: #B8B8B8;

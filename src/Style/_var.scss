@@ -7,3 +7,31 @@ $green:#7FBA32;
     flex-wrap: $wrap ;  
       
 }
+@mixin  responsive1 {
+    @media (max-width:400px) {
+        @content;
+        
+    }
+    
+}
+@mixin  responsive2 {
+    @media (min-width:401px) and (max-width:570px) {
+        @content;
+        
+    }
+    
+}
+@mixin  responsive3 {
+    @media (min-width:571px) and (max-width:992px) {
+        @content;
+        
+    }
+    
+}
+@mixin  responsive4 {
+    @media (min-width:993px) and (max-width:1215px) {
+        @content;
+        
+    }
+    
+}

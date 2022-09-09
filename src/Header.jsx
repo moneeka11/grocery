@@ -154,7 +154,7 @@ export default function Header() {
                 <div className="container">
                     <div className="below-bar">
                         <div className="row">
-                            <div className="col-lg-2">
+                            <div className="col-lg-2 col-md-2 col-sm-4 ">
                                 <div className="row">
 
                                     <div className="menulist" onClick={() => setShow(!show)}>
@@ -188,10 +188,10 @@ export default function Header() {
 
 
                             </div>
-                            <div className="col-lg-7">
+                            <div className="col-lg-7 col-md-7 col-sm-4">
                                 <Search placeholder="Search..." data={Allproduct} />
                             </div>
-                            <div className="col-lg-3">
+                            <div className="col-lg-3 col-md-3 col-sm-4">
                                 <div className="cart-icon">
                                     <span className='wishlist'><a href=""><i className="fa-regular fa-heart"></i></a></span>
                                     <span className="user"><Link to="/account"><i class="fa-regular fa-user"></i></Link></span>
